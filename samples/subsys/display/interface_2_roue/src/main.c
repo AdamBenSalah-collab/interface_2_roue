@@ -23,6 +23,7 @@ lv_ui guider_ui;
 int main(void)
 {
 	const struct device *display_dev;
+	printf("hello") ; 
 
 	display_dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));
 	if (!device_is_ready(display_dev)) {
